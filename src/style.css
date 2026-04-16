@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FFDE00;
+  --color-secondary: #B1E55F;
+  --color-accent-red: #FF5C5C;
+  --color-accent-blue: #6366F1;
+  --color-accent-purple: #A855F7;
+  
+  --font-sans: 'Space Grotesk', sans-serif;
+}
+
+/* Custom Neobrutalism Styles */
+:root {
+  --brutal-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+  --brutal-shadow-sm: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  --brutal-shadow-hover: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+  --brutal-border: 4px solid #000;
+  --brutal-border-thin: 2px solid #000;
+}
+
+body {
+  background-color: var(--color-primary);
+  background-image: radial-gradient(#000 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.shadow-brutal {
+  box-shadow: var(--brutal-shadow);
+}
+
+.shadow-brutal-sm {
+  box-shadow: var(--brutal-shadow-sm);
+}
+
+.border-brutal {
+  border: var(--brutal-border);
+}
+
+.avatar-container {
+  width: 120px;
+  height: 120px;
+  border-radius: 9999px;
+  border: var(--brutal-border);
+  overflow: hidden;
+  background-color: white;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.link-button {
+  background-color: white;
+  border: var(--brutal-border);
+  box-shadow: var(--brutal-shadow);
+}
+
+.link-button:hover {
+  box-shadow: var(--brutal-shadow-hover);
+}
+
+.link-button:active {
+  box-shadow: 0px 0px 0px 0px black;
+  transform: translate(6px, 6px);
+}
+
+.social-icon {
+  background-color: white;
+  border: var(--brutal-border);
+  box-shadow: var(--brutal-shadow-sm);
+}
+
+/* Animations */
+@keyframes pop {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-pop {
+  animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Specific button colors */
+.btn-red { background-color: var(--color-accent-red); }
+.btn-green { background-color: var(--color-secondary); }
+.btn-blue { background-color: var(--color-accent-blue); color: white; }
+.btn-purple { background-color: var(--color-accent-purple); color: white; }
+.btn-white { background-color: white; }

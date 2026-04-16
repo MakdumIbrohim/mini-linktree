@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linktree | Neobrutalism</title>
+    <!-- Google Fonts: Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+  <body class="bg-primary text-black font-sans antialiased min-h-screen flex items-center justify-center p-4">
+    <div id="app" x-data="linktree" class="w-full max-w-md space-y-8 py-10">
+      
+      <!-- Profile Section -->
+      <header class="flex flex-col items-center space-y-6">
+        <div class="avatar-container shadow-brutal animate-pop">
+          <img :src="profile.avatar" :alt="profile.name" class="avatar">
+        </div>
+        <div class="text-center space-y-3">
+          <h1 class="text-3xl font-bold bg-white px-4 py-1 border-4 border-black inline-block shadow-brutal" x-text="profile.name"></h1>
+          <div class="block">
+            <p class="text-lg font-bold bg-secondary px-3 py-1 border-2 border-black inline-block shadow-brutal-sm" x-text="profile.bio"></p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Links Section -->
+      <main class="space-y-6">
+        <template x-for="link in links" :key="link.id">
+          <a :href="link.url" target="_blank" 
+             class="link-button block w-full text-center py-5 px-6 text-xl font-bold transition-all transform hover:-translate-x-1 hover:-translate-y-1 active:translate-x-0.5 active:translate-y-0.5"
+             :class="link.colorClass">
+            <span x-text="link.title"></span>
+          </a>
+        </template>
+      </main>
+
+      <!-- Footer / Social links -->
+      <footer class="flex justify-center space-x-6 pt-6">
+        <template x-for="social in socials" :key="social.id">
+          <a :href="social.url" target="_blank" 
+             class="social-icon w-12 h-12 flex items-center justify-center border-4 border-black shadow-brutal-sm transition-all hover:-translate-y-1 active:translate-y-0.5"
+             :class="social.colorClass"
+             :aria-label="social.name">
+            <i :class="social.icon" class="text-2xl"></i>
+            <span class="sr-only" x-text="social.name"></span>
+          </a>
+        </template>
+      </footer>
+
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
