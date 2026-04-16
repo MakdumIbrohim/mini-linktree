@@ -44,17 +44,6 @@
         </template>
       </main>
 
-      <!-- Footer / Social links -->
-      <footer class="footer">
-        <template x-for="social in socials" :key="social.id">
-          <a :href="social.url" target="_blank" 
-             class="social-icon"
-             :class="social.colorClass"
-             :aria-label="social.name">
-            <i :class="social.icon"></i>
-          </a>
-        </template>
-      </footer>
 
     </div>
     <!-- Script -->

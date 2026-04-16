@@ -41,29 +41,6 @@ document.addEventListener('alpine:init', () => {
         url: 'mailto:hi@example.com',
         colorClass: 'btn-blue'
       }
-    ],
-    socials: [
-      {
-        id: 1,
-        name: 'GitHub',
-        icon: 'fa-brands fa-github',
-        url: 'https://github.com/makdumibrohim',
-        colorClass: 'bg-white'
-      },
-      {
-        id: 2,
-        name: 'Twitter',
-        icon: 'fa-brands fa-x-twitter',
-        url: 'https://twitter.com',
-        colorClass: 'bg-white'
-      },
-      {
-        id: 3,
-        name: 'LinkedIn',
-        icon: 'fa-brands fa-linkedin-in',
-        url: 'https://linkedin.com',
-        colorClass: 'bg-white'
-      }
     ]
   }));
 });
