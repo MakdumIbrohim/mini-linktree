@@ -8,31 +8,36 @@ document.addEventListener('alpine:init', () => {
     links: [
       {
         id: 1,
-        title: '💼 My Portfolio',
-        url: 'https://github.com/makdumibrohim',
+        title: 'Personal Website',
+        icon: 'fa-solid fa-globe',
+        url: 'https://makdumibrohim.id',
         colorClass: 'btn-white'
       },
       {
         id: 2,
-        title: '📝 Read My Blog',
-        url: '#',
-        colorClass: 'btn-green'
+        title: 'My GitHub',
+        icon: 'fa-brands fa-github',
+        url: 'https://github.com/makdumibrohim',
+        colorClass: 'btn-github'
       },
       {
         id: 3,
-        title: '📸 Instagram',
+        title: 'Instagram',
+        icon: 'fa-brands fa-instagram',
         url: 'https://instagram.com',
-        colorClass: 'btn-red'
+        colorClass: 'btn-instagram'
       },
       {
         id: 4,
-        title: '🎬 YouTube Channel',
+        title: 'YouTube Channel',
+        icon: 'fa-brands fa-youtube',
         url: '#',
-        colorClass: 'btn-purple'
+        colorClass: 'btn-youtube'
       },
       {
         id: 5,
-        title: '📧 Contact Me',
+        title: 'Contact Me',
+        icon: 'fa-solid fa-envelope',
         url: 'mailto:hi@example.com',
         colorClass: 'btn-blue'
       }

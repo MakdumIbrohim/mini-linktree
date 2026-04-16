@@ -129,6 +129,11 @@ body {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);
 }
 
+.button-icon {
+  margin-right: 12px;
+  font-size: 1.1rem;
+}
+
 .footer {
   margin-top: 40px;
   display: flex;
@@ -161,12 +166,14 @@ body {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);
 }
 
-/* Button Variants */
-.btn-red { background-color: var(--color-accent-red); }
-.btn-green { background-color: var(--color-secondary); }
+/* Button Variants & Brand Colors */
+.btn-white { background-color: var(--color-white); }
+.btn-github { background-color: #000000; color: var(--color-white); }
+.btn-youtube { background-color: #FF0000; color: var(--color-white); }
+.btn-instagram { background-color: #E4405F; color: var(--color-white); }
 .btn-blue { background-color: var(--color-accent-blue); color: var(--color-white); }
 .btn-purple { background-color: var(--color-accent-purple); color: var(--color-white); }
-.btn-white { background-color: var(--color-white); }
+.btn-green { background-color: var(--color-secondary); }
 
 /* Animations */
 @keyframes pop {
