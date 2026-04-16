@@ -3,7 +3,7 @@ document.addEventListener('alpine:init', () => {
     profile: {
       name: 'Makdum Ibrohim',
       bio: 'Fullstack Developer & UI Enthusiast',
-      avatar: './avatar.png'
+      avatar: '/avatar.png'
     },
     links: [
       {
