@@ -1,12 +1,9 @@
-import './style.css'
-
 document.addEventListener('alpine:init', () => {
-  // @ts-ignore
   Alpine.data('linktree', () => ({
     profile: {
       name: 'M. Ibrohim',
       bio: 'Fullstack Developer & UI Enthusiast',
-      avatar: '/avatar.png'
+      avatar: './avatar.png'
     },
     links: [
       {

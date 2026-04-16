@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Alpine.js -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./src/style.css">
   </head>
   <body>
     <div id="app" x-data="linktree">
@@ -22,7 +24,7 @@
         <div class="avatar-container">
           <img :src="profile.avatar" :alt="profile.name" class="avatar">
         </div>
-        <div>
+        <div class="text-center">
           <h1 class="username" x-text="profile.name"></h1>
           <div style="display: block;">
             <p class="bio" x-text="profile.bio"></p>
@@ -54,6 +56,7 @@
       </footer>
 
     </div>
-    <script type="module" src="/src/main.ts"></script>
+    <!-- Script -->
+    <script src="./src/script.js"></script>
   </body>
 </html>
