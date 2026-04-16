@@ -72,23 +72,29 @@ body {
   margin: 0 auto 24px;
 }
 
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .username {
-  font-size: 1rem;
-  font-weight: 400; /* Press Start 2P only has 400 */
+  font-size: 0.9rem;
+  font-weight: 400;
   background-color: var(--color-white);
-  padding: 10px 16px;
+  padding: 12px 16px;
   border: var(--brutal-border);
   display: inline-block;
   box-shadow: var(--brutal-shadow);
   margin-bottom: 20px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .bio {
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   font-weight: 400;
   background-color: var(--color-secondary);
-  padding: 8px 12px;
+  padding: 10px 12px;
   border: var(--brutal-border-thin);
   display: inline-block;
   box-shadow: var(--brutal-shadow-sm);
