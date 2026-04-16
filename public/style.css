@@ -14,7 +14,7 @@
   --brutal-border: 4px solid #000;
   --brutal-border-thin: 2px solid #000;
   
-  --font-main: 'Space Grotesk', sans-serif;
+  --font-main: 'Press Start 2P', system-ui;
 }
 
 * {
@@ -29,16 +29,17 @@ body {
   background-size: 24px 24px;
   font-family: var(--font-main);
   color: var(--color-black);
-  min-h: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
+  line-height: 1.6;
 }
 
 #app {
   width: 100%;
-  max-width: 450px;
+  max-width: 480px;
   margin: 0 auto;
 }
 
@@ -61,8 +62,8 @@ body {
 }
 
 .avatar-container {
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   border: var(--brutal-border);
   overflow: hidden;
@@ -71,52 +72,49 @@ body {
   margin: 0 auto 24px;
 }
 
-.avatar {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .username {
-  font-size: 1.875rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 400; /* Press Start 2P only has 400 */
   background-color: var(--color-white);
-  padding: 4px 16px;
+  padding: 10px 16px;
   border: var(--brutal-border);
   display: inline-block;
   box-shadow: var(--brutal-shadow);
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 .bio {
-  font-size: 1.125rem;
-  font-weight: 700;
+  font-size: 0.65rem;
+  font-weight: 400;
   background-color: var(--color-secondary);
-  padding: 4px 12px;
+  padding: 8px 12px;
   border: var(--brutal-border-thin);
   display: inline-block;
   box-shadow: var(--brutal-shadow-sm);
+  line-height: 1.8;
 }
 
 .links-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
 
 .link-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   text-align: center;
-  padding: 18px;
-  font-size: 1.25rem;
-  font-weight: 700;
+  padding: 20px;
+  font-size: 0.75rem;
   text-decoration: none;
   color: var(--color-black);
   background-color: var(--color-white);
   border: var(--brutal-border);
   box-shadow: var(--brutal-shadow);
-  transition: all 0.15s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .link-button:hover {
