@@ -2,7 +2,6 @@ document.addEventListener('alpine:init', () => {
   Alpine.data('linktree', () => ({
     profile: {
       name: 'Makdum Ibrohim',
-      bio: 'Fullstack Developer & UI Enthusiast',
       avatar: '/avatar.png'
     },
     links: [
