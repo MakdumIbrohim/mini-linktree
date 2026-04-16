@@ -1,7 +1,7 @@
 document.addEventListener('alpine:init', () => {
   Alpine.data('linktree', () => ({
     profile: {
-      name: 'M. Ibrohim',
+      name: 'Makdum Ibrohim',
       bio: 'Fullstack Developer & UI Enthusiast',
       avatar: './avatar.png'
     },
@@ -10,36 +10,15 @@ document.addEventListener('alpine:init', () => {
         id: 1,
         title: 'Personal Website',
         icon: 'fa-solid fa-globe',
-        url: 'https://makdumibrohim.id',
+        url: 'https://about-dum.vercel.app/',
         colorClass: 'btn-white'
       },
       {
         id: 2,
         title: 'My GitHub',
         icon: 'fa-brands fa-github',
-        url: 'https://github.com/makdumibrohim',
+        url: 'https://github.com/MakdumIbrohim',
         colorClass: 'btn-github'
-      },
-      {
-        id: 3,
-        title: 'Instagram',
-        icon: 'fa-brands fa-instagram',
-        url: 'https://instagram.com',
-        colorClass: 'btn-instagram'
-      },
-      {
-        id: 4,
-        title: 'YouTube Channel',
-        icon: 'fa-brands fa-youtube',
-        url: '#',
-        colorClass: 'btn-youtube'
-      },
-      {
-        id: 5,
-        title: 'Contact Me',
-        icon: 'fa-solid fa-envelope',
-        url: 'mailto:hi@example.com',
-        colorClass: 'btn-blue'
       }
     ]
   }));
