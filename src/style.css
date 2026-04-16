@@ -168,7 +168,11 @@ body {
 
 /* Button Variants & Brand Colors */
 .btn-white { background-color: var(--color-white); }
-.btn-github { background-color: #000000; color: var(--color-white); }
+.btn-github { 
+  background-color: #000000; 
+  color: var(--color-white); 
+  border-color: var(--color-white); /* White border for better contrast */
+}
 .btn-youtube { background-color: #FF0000; color: var(--color-white); }
 .btn-instagram { background-color: #E4405F; color: var(--color-white); }
 .btn-blue { background-color: var(--color-accent-blue); color: var(--color-white); }
