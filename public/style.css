@@ -81,32 +81,32 @@ body {
 }
 
 .username {
-  font-size: 0.9rem;
+  font-size: 1.1rem; /* Slightly larger for better pixel alignment */
   font-weight: 400;
   background-color: var(--color-white);
-  padding: 12px 16px;
+  padding: 16px 20px;
   border: var(--brutal-border);
   display: inline-block;
   box-shadow: var(--brutal-shadow);
-  margin-bottom: 20px;
-  line-height: 1.5;
+  margin-bottom: 24px;
+  line-height: 1.6;
 }
 
 .bio {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: 400;
   background-color: var(--color-secondary);
-  padding: 10px 12px;
+  padding: 12px 16px;
   border: var(--brutal-border-thin);
   display: inline-block;
   box-shadow: var(--brutal-shadow-sm);
-  line-height: 1.8;
+  line-height: 2; /* Increased for breathing room */
 }
 
 .links-container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 28px; /* More gap between buttons */
 }
 
 .link-button {
@@ -115,14 +115,15 @@ body {
   justify-content: center;
   width: 100%;
   text-align: center;
-  padding: 20px;
-  font-size: 0.75rem;
+  padding: 24px 20px; /* More vertical padding */
+  font-size: 0.85rem; /* Better scale for 8-bit font */
   text-decoration: none;
   color: var(--color-black);
   background-color: var(--color-white);
   border: var(--brutal-border);
   box-shadow: var(--brutal-shadow);
   transition: all 0.1s ease-in-out;
+  letter-spacing: 0.02em; /* Slight spacing to avoid character merging */
 }
 
 .link-button:hover {
